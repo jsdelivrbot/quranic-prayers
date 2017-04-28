@@ -1,0 +1,48 @@
+<!--
+  Generated template for the Prayer page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <span class="latin">{{item.no}} - {{item.name}}</span>
+      <img class="section" src="img/sections/{{item.no | padleft: [3,'0']}}.svg">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="light">
+  <ion-card padding>
+    <h4 class="source">اعُوذُ باللّهِ مِنَ الشَّيْطَانِ الرَّجيم</h4>
+    <p  *ngIf="showTransFa" class="center farsi ">پناه می جویم به خدا از شر شیطان رانده شده</p>
+    <p  *ngIf="showTransEn" class="latin center">I seek refuge in Allah from the cursed Satan</p>
+  </ion-card>
+  <ion-card padding *ngFor="let s of item.source; let i = index">
+    <p class="source">
+      <span> 
+			{{s}}
+		</span>
+    </p>
+    <p *ngIf="showTransFa" class="farsi">
+      {{item.fa[i]}} - {{(item.begin)+i}}
+    </p>
+    <p *ngIf="showTransEn" class="latin">
+      {{item.en[i]}} ({{(item.begin)+i}})
+    </p>
+  </ion-card>
+</ion-content>
+<!--<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="previous()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="next()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>-->

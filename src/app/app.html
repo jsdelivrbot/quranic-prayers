@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>{{'QURANIC_PRAYERS' | translate }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menu-close ion-item icon-left *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon name="{{p.icon}}"></ion-icon>
+        {{p.title | translate }}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

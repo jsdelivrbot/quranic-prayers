@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+      
+    </button>
+
+
+    <ion-title>
+      {{'QURANIC_PRAYERS' | translate }}
+    </ion-title>
+
+    <!--<ion-searchbar #searchBar placeholder="{{'SEARCH' | translate }}" end (ionInput)="getItems($event)"></ion-searchbar> -->
+
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item-group *ngFor="let section of sections">
+    <ion-item-divider class="latin" color="light">
+      <a  ion-text color="dark">{{section.no}} - {{section.name | translate}}</a>
+      <img class="section" item-right src="img/sections/{{section.no | padleft: [3,'0']}}.svg">
+    </ion-item-divider>
+    <button class="source" ion-item *ngFor="let item of section.items" (click)="itemSelected(item)">
+      <span *ngIf="item.begin == item.end">({{ item.begin }})</span>
+      <span *ngIf="item.begin != item.end">({{ item.begin }} - {{item.end}})</span>
+     {{item.source[0]}}
+  </button>
+  </ion-item-group>
+</ion-content>

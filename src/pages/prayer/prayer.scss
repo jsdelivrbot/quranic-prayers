@@ -1,0 +1,56 @@
+page-prayer {
+
+	p {
+		text-align: justify;
+	}
+	
+	p.source {
+		font-family: "uthman";
+		font-size: x-large !important;
+		text-align: right;
+		text-align-last: right;
+		padding-bottom: 10px;
+	}
+
+	p.farsi {
+		font-family: "uthman";
+		font-size: larger !important;
+		text-align: right;
+		text-align-last: right;
+		padding-bottom: 10px;
+	}
+
+	p.latin {
+		font-family: "linowrite";
+		font-size: large !important;
+	}
+	
+	p.center {
+		text-align: center;
+	}
+	
+	h4.source {
+		font-family: "uthman";
+		font-size: x-large !important;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	span.latin{
+		font-family: "linowrite";
+	}
+	
+	img.section {
+		max-height:70px !important;
+		margin-top: -25px !important;
+		margin-bottom:-25px !important;
+		filter: invert(100%);
+		position: fixed;
+		right: 0px;
+		width: 100px;
+	}
+	
+	ion-content.light {
+		background-color: #ede9ce;
+	}
+}

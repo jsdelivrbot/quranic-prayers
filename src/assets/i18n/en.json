@@ -1,0 +1,15 @@
+{
+	"QURANIC_PRAYERS": "Quranic Prayers",
+	"QURANIC_PRAYERS_DESCRIPTION": "Selection of all quranic prayers extracted from Sahih International English translation.",
+	"HOME": "Home",
+	"SETTINGS": "Settings",
+	"ABOUT": "About",
+	"VERSION" : "Version",
+	"CREDITS" : "Credits",
+	"KAMAL_RAHMATI" : "Kamal Rahmati",
+	"IDEA_AND_DEVELOPMENT" : "Idea & Development",
+	"SEARCH" : "Search",
+	"LANGUAGE": "Language",
+	"SHOW_TRANS_FA": "Show Farsi Translation",
+	"SHOW_TRANS_EN": "Show English Translation"
+}

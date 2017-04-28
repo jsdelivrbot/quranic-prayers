@@ -1,0 +1,27 @@
+page-home {
+	ion-item-divider.latin {
+		font-family: "linowrite";
+		font-size: 1.3em !important;
+	}
+	
+	ion-item-divider.source {
+		font-family: "uthman";
+		font-size: 1.5em !important;
+	}
+	
+	button.latin {
+		font-family: "linowrite";
+	}
+	
+	button.source {
+		font-family: "uthman";
+		font-size: 1.5em !important;
+		direction: rtl;
+	}
+
+	img.section {
+		max-height:80px !important;
+		margin-top: -40px !important;
+		margin-bottom:-40px !important;
+	}
+}

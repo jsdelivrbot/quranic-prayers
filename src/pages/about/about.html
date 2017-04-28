@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      {{'ABOUT' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="light">
+  <ion-card >
+    <ion-card-header>
+      {{'QURANIC_PRAYERS' | translate }}
+    </ion-card-header>
+    <ion-item >
+      <ion-avatar item-left>
+        <img src="/img/qp.png">
+      </ion-avatar>
+      <h2>{{ 'VERSION' | translate }} 1.0.0</h2>
+      
+    </ion-item>
+    <p padding>{{'QURANIC_PRAYERS_DESCRIPTION' | translate }}</p>
+  </ion-card>
+  <ion-card >
+    <ion-card-header>
+      {{ 'CREDITS' | translate }}
+    </ion-card-header>
+    <ion-item >
+      <ion-avatar item-left>
+        <img src="/img/kr.png">
+      </ion-avatar>
+      <h2>{{ 'KAMAL_RAHMATI' | translate }}</h2>
+      <p>{{ 'IDEA_AND_DEVELOPMENT' | translate }}</p>
+    </ion-item>
+  </ion-card>
+</ion-content>
